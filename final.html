@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Educativo - Samuel Acosta Siri</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Portal Educativo Digital</h1>
+            <p class="subtitle">Estudiante: Samuel Acosta Siri | Desarrollo Web - Segundo Módulo</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#registro">Registro</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#informacion">Información</a>
+    </nav>
+
+    <main class="container">
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Bienvenido al Portal Educativo</h2>
+                <p>Plataforma digital integral que combina aprendizaje, tecnología y multimedia para crear una experiencia educativa completa y moderna.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Secciones</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">HTML5</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Recursos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <h2>Sobre Este Proyecto</h2>
+                <p>Este portal educativo representa la culminación del aprendizaje en desarrollo web, integrando elementos multimedia, formularios interactivos y las mejores prácticas de HTML5 semántico.</p>
+                <p>Desarrollado como proyecto final de la Guía 3, demuestra el dominio de estructuras semánticas, integración multimedia y diseño de interfaces modernas.</p>
+            </div>
+        </section>
+
+        <section id="registro" class="form-section">
+            <div class="form-header">
+                <h2>Registro de Evento Académico</h2>
+                <p>Complete el formulario para inscribirse en nuestros próximos eventos educativos</p>
+            </div>
+
+            <form class="registration-form" action="#" method="post">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+1 (809) 000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="carrera">Carrera</label>
+                        <select id="carrera" name="carrera" required>
+                            <option value="">Seleccione una carrera</option>
+                            <option value="ingenieria-sistemas">Ingeniería en Sistemas</option>
+                            <option value="ingenieria-software">Ingeniería de Software</option>
+                            <option value="ciencias-computacion">Ciencias de la Computación</option>
+                            <option value="desarrollo-web">Desarrollo Web</option>
+                            <option value="ciberseguridad">Ciberseguridad</option>
+                            <option value="data-science">Ciencia de Datos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nivel">Nivel Académico</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">Seleccione su nivel</option>
+                            <option value="primer-ano">Primer Año</option>
+                            <option value="segundo-ano">Segundo Año</option>
+                            <option value="tercer-ano">Tercer Año</option>
+                            <option value="cuarto-ano">Cuarto Año</option>
+                            <option value="postgrado">Postgrado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="institucion">Institución Educativa</label>
+                    <input type="text" id="institucion" name="institucion" placeholder="Nombre de su institución" required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Eventos de Interés</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="evento" value="desarrollo-web">
+                            <span>Taller de Desarrollo Web</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="evento" value="ciberseguridad">
+                            <span>Conferencia de Ciberseguridad</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="evento" value="inteligencia-artificial">
+                            <span>Seminario de IA</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="evento" value="programacion">
+                            <span>Bootcamp de Programación</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Modalidad Preferida</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="modalidad" value="presencial" checked>
+                            <span>Presencial</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="modalidad" value="virtual">
+                            <span>Virtual</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="modalidad" value="hibrido">
+                            <span>Híbrido</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="mensaje">Mensaje o Comentarios (Opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba cualquier comentario o pregunta adicional"></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terminos" required>
+                        <span>Acepto los términos y condiciones del evento</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Enviar Registro</button>
+                    <button type="reset" class="btn-reset">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="multimedia" class="multimedia-section">
+            <div class="section-header">
+                <h2>Recursos Multimedia</h2>
+                <p>Explora nuestra colección de contenido audiovisual y herramientas interactivas</p>
+            </div>
+
+            <article class="media-item">
+                <div class="media-header">
+                    <h3>Video Educativo Local</h3>
+                    <span class="badge badge-purple">HTML5 Video</span>
+                </div>
+                <p class="media-description">Video de demostración sobre desarrollo web moderno con HTML5 y CSS3.</p>
+                <div class="media-container">
+                    <video controls width="100%" poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video HTML5.
+                    </video>
+                </div>
+            </article>
+
+            <article class="media-item">
+                <div class="media-header">
+                    <h3>Video de YouTube</h3>
+                    <span class="badge badge-blue">YouTube Embed</span>
+                </div>
+                <p class="media-description">Tutorial completo sobre desarrollo web y programación moderna.</p>
+                <div class="media-container">
+                    <iframe 
+                        width="100%" 
+                        height="500" 
+                        src="https://www.youtube.com/embed/4EsSu17ZIZE" 
+                        title="Video de YouTube" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </article>
+
+            <article class="media-item">
+                <div class="media-header">
+                    <h3>Audio Educativo</h3>
+                    <span class="badge badge-purple">HTML5 Audio</span>
+                </div>
+                <p class="media-description">Podcast educativo sobre tecnología y desarrollo de software.</p>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Tu navegador no soporta la reproducción de audio HTML5.
+                    </audio>
+                </div>
+            </article>
+
+            <article class="media-item">
+                <div class="media-header">
+                    <h3>Ubicación del Campus</h3>
+                    <span class="badge badge-blue">Google Maps</span>
+                </div>
+                <p class="media-description">Mapa interactivo mostrando la ubicación de Santo Domingo, República Dominicana.</p>
+                <div class="media-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2977165669517!2d-69.93137492493658!3d18.486393682592405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1e9791f8b%3A0x3879b93e9c20e86d!2sSanto%20Domingo!5e0!3m2!1ses!2sdo!4v1729350000000!5m2!1ses!2sdo" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </article>
+
+            <article class="media-item">
+                <div class="media-header">
+                    <h3>Presentación del Curso</h3>
+                    <span class="badge badge-purple">Google Slides</span>
+                </div>
+                <p class="media-description">Presentación interactiva con el contenido del módulo de desarrollo web.</p>
+                <div class="media-container">
+                    <iframe 
+                        src="https://docs.google.com/presentation/d/1ffQvknlPv2H9WAaFSBGej210E2pEAMDH0Lh_ocxYeK4/edit?usp=sharing" 
+                        frameborder="0" 
+                        width="100%" 
+                        height="500" 
+                        allowfullscreen="true">
+                    </iframe>
+                </div>
+            </article>
+
+            <article class="media-item indicators-section">
+                <div class="media-header">
+                    <h3>Indicadores de Progreso</h3>
+                    <span class="badge badge-blue">Progress & Meter</span>
+                </div>
+                <p class="media-description">Elementos HTML5 para visualizar progreso y mediciones en tiempo real.</p>
+                
+                <div class="indicators-grid">
+                    <div class="indicator-card">
+                        <h4>Progreso del Curso</h4>
+                        <p>Avance actual del módulo</p>
+                        <progress value="85" max="100">85%</progress>
+                        <span class="indicator-label">85% completado</span>
+                    </div>
+
+                    <div class="indicator-card">
+                        <h4>Carga de Contenido</h4>
+                        <p>Descarga de materiales</p>
+                        <progress value="70" max="100">70%</progress>
+                        <span class="indicator-label">70% descargado</span>
+                    </div>
+
+                    <div class="indicator-card">
+                        <h4>Rendimiento Académico</h4>
+                        <p>Calificación del estudiante</p>
+                        <meter value="9" min="0" max="10" low="5" high="8" optimum="10">9/10</meter>
+                        <span class="indicator-label">9.0/10 - Excelente</span>
+                    </div>
+
+                    <div class="indicator-card">
+                        <h4>Asistencia a Clases</h4>
+                        <p>Porcentaje de asistencia</p>
+                        <meter value="95" min="0" max="100" low="70" high="85" optimum="100">95%</meter>
+                        <span class="indicator-label">95% - Óptimo</span>
+                    </div>
+
+                    <div class="indicator-card">
+                        <h4>Tareas Completadas</h4>
+                        <p>Trabajos entregados</p>
+                        <meter value="12" min="0" max="15" low="8" high="11" optimum="15">12/15</meter>
+                        <span class="indicator-label">12 de 15 tareas</span>
+                    </div>
+
+                    <div class="indicator-card">
+                        <h4>Participación en Foros</h4>
+                        <p>Nivel de interacción</p>
+                        <meter value="8.5" min="0" max="10" low="4" high="7" optimum="10">8.5/10</meter>
+                        <span class="indicator-label">8.5/10 - Muy Bueno</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside id="informacion" class="info-sidebar">
+            <h3>Información del Proyecto</h3>
+            <div class="info-content">
+                <div class="info-block">
+                    <h4>Datos Académicos</h4>
+                    <ul>
+                        <li><strong>Estudiante:</strong> Samuel Acosta Siri</li>
+                        <li><strong>Materia:</strong> Desarrollo Web</li>
+                        <li><strong>Módulo:</strong> Segundo Módulo</li>
+                        <li><strong>Proyecto:</strong> Guía 3</li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h4>Tecnologías Utilizadas</h4>
+                    <ul>
+                        <li>HTML5 Semántico</li>
+                        <li>CSS3 Moderno</li>
+                        <li>Formularios Interactivos</li>
+                        <li>Multimedia Embebida</li>
+                        <li>Diseño Responsivo</li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Estructura Semántica Completa</li>
+                        <li>Validación de Formularios</li>
+                        <li>Integración Multimedia</li>
+                        <li>Navegación Intuitiva</li>
+                        <li>Accesibilidad Optimizada</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class="features-overview">
+            <h2>Elementos Implementados</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">📝</div>
+                    <h3>Formularios</h3>
+                    <p>Campos de entrada con validación, select, radio, checkbox y textarea</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🎥</div>
+                    <h3>Video</h3>
+                    <p>Videos locales HTML5 y embebidos de YouTube con controles</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Audio</h3>
+                    <p>Reproducción de audio HTML5 con controles nativos</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Mapas</h3>
+                    <p>Google Maps interactivo embebido con iframe</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">📊</div>
+                    <h3>Presentaciones</h3>
+                    <p>Google Slides embebido para contenido educativo</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">📈</div>
+                    <h3>Indicadores</h3>
+                    <p>Barras de progreso y medidores HTML5 funcionales</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Portal Educativo Digital</h4>
+                <p>Proyecto Final - Guía 3</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Samuel Acosta Siri</p>
+                <p>Desarrollo Web - Segundo Módulo</p>
+            </div>
+            <div class="footer-section">
+                <h4>Tecnologías</h4>
+                <p>HTML5 | CSS3</p>
+                <p>Diseño Responsivo</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Samuel Acosta Siri. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
