@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a0a2e 50%, #0f0f23 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #6c5ce7;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #6c5ce7, #74b9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #a0a0a0;
+    font-size: 1rem;
+}
+
+nav {
+    background: rgba(26, 26, 46, 0.8);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(108, 92, 231, 0.2);
+    z-index: 100;
+}
+
+nav a {
+    color: #a0a0a0;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    background: rgba(108, 92, 231, 0.3);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+section {
+    background: rgba(26, 26, 46, 0.6);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #74b9ff, #6c5ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    color: #6c5ce7;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #c0c0c0;
+}
+
+a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #6c5ce7;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.caption {
+    text-align: center;
+    color: #808080;
+    font-size: 0.9rem;
+    margin-top: -1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+ul li {
+    background: rgba(22, 33, 62, 0.5);
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    border-left: 3px solid #6c5ce7;
+}
+
+ul li strong {
+    color: #74b9ff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.lugares-list p {
+    background: rgba(22, 33, 62, 0.5);
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+}
+
+.lugares-list strong {
+    color: #6c5ce7;
+}
+
+.enlaces {
+    background: rgba(108, 92, 231, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.recurso {
+    background: rgba(22, 33, 62, 0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tabla-container {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: rgba(22, 33, 62, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: rgba(108, 92, 231, 0.3);
+}
+
+th {
+    padding: 1rem;
+    text-align: left;
+    color: #74b9ff;
+    font-weight: 600;
+}
+
+td {
+    padding: 1rem;
+    border-top: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+tbody tr:hover {
+    background: rgba(108, 92, 231, 0.1);
+}
+
+footer {
+    background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #6c5ce7;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: #808080;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
