@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #0a0a0a;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+    padding: 100px 0;
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+header p {
+    font-size: 1.4rem;
+    color: #888;
+    font-weight: 400;
+}
+
+main {
+    padding: 80px 0;
+}
+
+.intro {
+    background: #0f0f0f;
+    padding: 60px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    border: 1px solid #222;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #fff 0%, #888 100%);
+}
+
+.intro h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+    margin-bottom: 80px;
+}
+
+.project-card {
+    background: #0f0f0f;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    border-color: #444;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.card-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, #0f0f0f 100%);
+}
+
+.card-content {
+    padding: 40px;
+    position: relative;
+}
+
+.card-content h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.card-content p {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #e0e0e0;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::after {
+    content: '→';
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover::after {
+    transform: translateX(5px);
+}
+
+footer {
+    background: #0f0f0f;
+    padding: 40px 0;
+    margin-top: 80px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    color: #888;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .intro {
+        padding: 40px 30px;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+    }
+    
+    .card-content {
+        padding: 30px;
+    }
+    
+    main {
+        padding: 50px 0;
+    }
+}
